@@ -65,6 +65,7 @@ button img {
   .card {
     width: 100%;
     padding: 20px;
+    min-height: 5vh;
   }
   .adviceText {
     font-size: 13px;
@@ -85,7 +86,7 @@ button img {
   }
   button {
     bottom: 14.3rem;
-    right: 9.7rem;
+    right: 9.5rem;
     width: 30px;
     height: 30px;
   }
