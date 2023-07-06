@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 80%;
+  max-width: 600px;
+  min-height: 5vh;
+  background: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+}
+.mobile {
+  display: none;
+}
+.card h6 {
+  color: hsl(150, 100%, 66%);
+  margin-left: 13.5rem;
+  font-size: 14px;
+  letter-spacing: 2.4px;
+}
+.adviceText {
+  color: #fff;
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 20px;
+  min-height: 100px;
+}
+.patternDivider {
+  padding: 0 50px;
+}
+button {
+  position: absolute;
+  bottom: 14.5rem;
+  right: 46rem;
+  background: hsl(150, 100%, 66%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding-top: 3px;
+}
+button img {
+  width: 24px;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  .container {
+    align-items: center;
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+  .adviceText {
+    font-size: 15px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    width: 200px;
+    display: block;
+  }
+  .card h6 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  button {
+    bottom: 13.3rem;
+    right: 10.65rem;
+    width: 30px;
+    height: 30px;
+  }
+  button img {
+    width: 15px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 50px;
+  }
+  .card {
+    width: 80%;
+    padding: 40px;
+  }
+  .card h6 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 400px;
+    padding-right: 4rem;
+  }
+  button {
+    bottom: 18rem;
+    right: 23.3rem;
+  }
+}
